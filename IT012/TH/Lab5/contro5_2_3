@@ -1,0 +1,119 @@
+.data
+Array: .space 100
+InputN: .asciiz "Nhap N: "
+MaxArr: .asciiz "\nMax = "
+MinArr: .asciiz "\nMin = "
+SumArr: .asciiz "\nSum = "
+inputPos: .asciiz "\nNhap vao chi so: "
+.text
+	la $a0, InputN
+	li $v0, 4
+	syscall
+	li $v0, 5
+	syscall
+	move $a2, $v0
+	la $a1, Array
+	li $t0, 0
+	jal InputArray
+	la $a1, Array
+	li $t0, 0
+	lw $t1, 0($a1)
+	j MaxArray
+inmax:
+	li $v0, 4
+	la $a0, MaxArr
+	syscall
+	li $v0, 1
+	move $a0, $t1
+	syscall
+	la $a1, Array
+	li $t0, 0
+	lw $t1, 0($a1)
+	j MinArray
+
+inmin:
+	li $v0, 4
+	la $a0, MinArr
+	syscall
+	li $v0, 1
+	move $a0, $t1
+	syscall
+	la $a1, Array
+	li $t0, 0
+	lw $t1, 0($a1)
+	j Sum
+
+inSum:
+	li $v0, 4
+	la $a0, SumArr
+	syscall
+	li $v0, 1
+	move $a0, $t1
+	syscall
+	la $v0, 4
+	la $a0, inputPos
+	syscall
+	li $v0, 5
+	syscall
+	la $a1, Array
+	sll $v0, $v0, 2
+	add $a1, $a1, $v0
+	lw $a0, 0($a1)
+	li $v0, 1
+	syscall
+	j End
+InputArray:
+	blt $t0, $a2, LoopInput
+	jr $ra
+LoopInput:
+	li $v0, 5
+	syscall
+	sw $v0, ($a1)
+	add $a1, $a1, 4
+	addi $t0, $t0, 1
+	j InputArray
+
+
+MaxArray:
+	add $t0,$a1,$t0
+	sll $a2,$a2,2
+	add $t2,$a1,$a2
+
+	addi $t0,$t0,4
+FindMax:
+	lw $t3,0($t0)
+	bgt $t3, $t1, GanMax
+	addi $t0, $t0, 4
+	bne $t0,$t2, FindMax
+	j inmax
+GanMax:
+	lw $t1, 0($t0)
+	addi $t0, $t0, 4
+	bne $t0,$t2, FindMax
+	j inmax
+
+MinArray:
+	add $t0,$a1,$t0
+	addi $t0,$t0,4
+FindMin:
+	lw $t3, 0($t0)
+	blt $t3, $t1, GanMin
+	addi $t0, $t0, 4
+	bne $t0,$t2, FindMin
+	j inmin
+GanMin:
+	lw $t1, 0($t0)
+	addi $t0, $t0, 4
+	bne $t0,$t2, FindMin
+	j inmin
+
+Sum:
+	add $t0,$a1,$t0
+	addi $t0,$t0,4
+Sum1:
+	lw $t3, 0($t0)
+	add $t1,$t1,$t3
+	addi $t0, $t0, 4
+	bne $t0,$t2, Sum1
+	j inSum
+End:

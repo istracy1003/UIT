@@ -1,0 +1,73 @@
+.data
+	string0: .asciiz "Nhap ky tu: "
+	string1: .asciiz"\nKy tu nhap vao la chu hoa"
+	string2: .asciiz"\nKy tu nhap vao la chu thuong"
+	string3: .asciiz"\nKy tu nhap vao la chu so"
+	string4: .asciiz"\nKy tu truoc: "
+	string5: .asciiz"\nKy tu sau: "
+	string6: .asciiz "\ninvalid type"
+.text
+	li $v0, 4
+	la $a0, string0
+	syscall
+	li $v0, 12
+	syscall 
+	move $a1, $v0 
+KTChuHoa:
+	li $s1, 'A'
+	li $s2, 'Z'
+	bge $a1, $s1, KTChuHoa1
+	j KTSo
+KTChuHoa1: 
+ 	ble $a1,$s2,LaChuHoa
+ 	j KTChuThuong
+LaChuHoa:
+	li $v0, 4
+	la $a0, string1
+	syscall 
+	j Xuat
+KTChuThuong:
+	li $s1, 'a'
+	li $s2, 'z'
+	bge $a1,$s1,KTChuThuong1 
+	j KhongThuoc
+KTChuThuong1: 
+ 	ble $a1,$s2,LaChuThuong
+ 	j KhongThuoc
+LaChuThuong:
+	li $v0, 4
+	la $a0, string2
+	syscall 
+	j Xuat
+KTSo:
+	li $s1, '0'
+	li $s2, '9'
+	bge $a1, $s1, KTSo1 
+	j KhongThuoc
+KTSo1: 
+ 	ble $a1,$s2,LaSo
+ 	j KhongThuoc
+LaSo:
+ 	li $v0, 4
+	la $a0, string3
+	syscall
+	j Xuat 
+KhongThuoc:
+	li $v0, 4
+	la $a0, string6
+	syscall 
+	j EndProgram
+Xuat:
+	li $v0, 4
+	la $a0, string4
+	syscall 
+	li $v0, 11
+	subi $a0, $a1, 1 
+	syscall 
+	li $v0, 4
+	la $a0, string5
+	syscall 
+	li $v0, 11
+	addi $a0, $a1, 1 
+	syscall 
+EndProgram:

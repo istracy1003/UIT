@@ -1,0 +1,9 @@
+.data 
+string1: .asciiz "Chao ban! ban la sinh vien nam may?"
+string2: .asciiz "\nHihi,minh la sinh vien nam 1 ^-^"
+.text 
+main: li $v0,4 
+la $a0,string1 
+syscall
+la $a0,string2 
+syscall 

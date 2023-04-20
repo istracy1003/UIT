@@ -1,0 +1,14 @@
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\bin\Debug\Khai báo lý lịch sinh viên.exe.config
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\bin\Debug\Khai báo lý lịch sinh viên.exe
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\bin\Debug\Khai báo lý lịch sinh viên.pdb
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\bin\Debug\aa\Khai báo lý lịch sinh viên.resources.dll
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai báo lý lịch sinh viên.csproj.AssemblyReference.cache
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai báo lý lịch sinh viên.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai_báo_lý_lịch_sinh_viên.Form1.resources
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai_báo_lý_lịch_sinh_viên.Properties.Resources.resources
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai_báo_lý_lịch_sinh_viên.Form1.aa.resources
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai báo lý lịch sinh viên.csproj.GenerateResource.cache
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai báo lý lịch sinh viên.csproj.CoreCompileInputs.cache
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\aa\Khai báo lý lịch sinh viên.resources.dll
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai báo lý lịch sinh viên.exe
+C:\Users\pc\OneDrive\Subject\IE103\Lý thuyết\bài tập\Khai báo lý lịch sinh viên\Khai báo lý lịch sinh viên\obj\Debug\Khai báo lý lịch sinh viên.pdb

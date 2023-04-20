@@ -1,0 +1,190 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Huong}{Quynh Le Nguyen}{Student}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+\setlength{\columnseprule}{0.5pt}
+
+% 1,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{tracycute.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize
+Searching for a position as a Web Designer with NashTech Company, coming with strong graphic design knowledge, and the ability to work with different software tools to create engaging web content/pages.}
+\bigskip
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Huong Quynh Le Nguyen
+
+Nationality: Vietnamese 
+
+2003
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+Design ~•~ Web Programming ~•~ Team Manager ~•~ Trainer
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+Participate in art activities.
+
+Read newspaper.
+
+Programming.
+
+\bigskip
+
+\infobubble{\faFacebook}{cvgreen}{white}{Tracy Nguyen}
+\infobubble{\faGithub}{cvgreen}{white}{UIT-21520255}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Experiences}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021--Now}{Designer at Study Club of Faculty of Information Science and Engineer}{Vice Lead}{Ho Chi Minh City \color{cvred}}{Using creativity to produce magnificent Posters and Banners for the Organisation. Managing and giving feedbacks for members of Design Team. Finalize the Products before publishing.}{logo_bht.png} \\
+    \cvevent{2019-2020}{Designer at Luong The Vinh Highschool Basketball Club }{Member}{Bien Hoa \color{cvred}}{Design Poster and Banner for Club's Fanpage.}{logo_ltv_basketball.jpg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Education}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2020}{Student}{Certified}{Luong The Vinh Spec. Highschool \color{headerblue}}{}{logo_ltv.jpg} \\
+    \cvdegree{2025}{Bachelor}{Certified}{University of Information Technology \color{headerblue}}{}{logo_uit.png} \\
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.5}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{java} & \barrule{0.45}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.3}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.5}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Certifications}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2022}{Effective Study Skills}{Thinking School}{Ho Chi Minh City \color{cvred}}{}{logo_thinkingschool.png} \\
+    \cvevent{2022}{Teamwork Skills}{Thinking School}{Ho Chi Minh City \color{cvred}}{}{logo_thinkingschool.png} \\
+ 
+    \cvevent{2022}{Practicing Critical Thinking}{Thinking School}{Ho Chi Minh City \color{cvred}}{}{logo_thinkingschool.png} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Skills}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    Design Skills & Photoshop, Illutrator \\
+    Office Skills & Word, Excel, PowerPoint \\
+    Soft Skills   & Critical Thinking, Creative Thinking, Teamwork
+\end{tabular}
+\bigskip
+
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{Vietnamese} & -- & {\phantom{x}\footnotesize Mother Tongue} \\
+\textbf{English} & B2 & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{2}{\tiny} \\
+\textbf{Japanese} & N3 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Activities}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    2020 & \emph{Voluntary blood donation}, Luong The Vinh Spec.Highschool  \\
+    2021 & \emph{Career Day 2021}, University of Information Technology     \\
+    2021 & \emph{Voluntary Spring 2022}, University of Information Technology
+\end{tabular}
+\bigskip
+
+
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Huong Nguyen  \icon{\faMapMarker}{cvgreen}{} Bien Hoa \icon{\faPhone}{cvgreen}{} 0797707497 \newline\icon{\faAt}{cvgreen}{} \protect\url{21520255@gm.uit.edu.vn}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}

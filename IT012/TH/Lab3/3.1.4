@@ -1,0 +1,11 @@
+.data 
+ .text 
+main: li $v0, 5 
+ syscall 
+ move $a1, $v0 
+ li $v0, 5 
+ syscall 
+ move $a2, $v0 
+ li $v0, 1 
+ add $a0, $a1, $a2 
+ syscall

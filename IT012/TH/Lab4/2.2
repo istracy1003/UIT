@@ -1,0 +1,9 @@
+               li $s0, 1 
+               li $s2, 0 
+Loop: 
+            bgt $s0, $s1, End
+            add $s2, $s2, $s0
+            addi $s0, $s0, 1
+            j Loop
+End:
+
